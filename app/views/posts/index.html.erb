@@ -1,7 +1,7 @@
-<h1>つぶやき一覧（index.html.erb）</h1>
+<h1>つぶやきメッセージ一覧（index.html.erb）</h1>
 <table>
     <tr>
-        <td>コンテンツ</td>
+        <td>＜コンテンツ＞</td>
     </tr>
     <% @posts.each do |post| %>
         <tr>
@@ -9,3 +9,5 @@
         </tr>
     <% end %>
 </table>
+<br>
+<%= link_to '新規つぶやき作成画面へ戻る', new_post_path %>
