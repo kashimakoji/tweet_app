@@ -6,9 +6,10 @@
     <% @posts.each do |post| %>
         <tr>
             <td><%= post.content %></td>
-            <td><%= link_to '内容を編集する', edit_post_path(post.id) %></td>
+            <td><%= link_to 'ツイート内容を編集する', edit_post_path(post.id) %></td>
+            <td><%= link_to 'ツイートを削除する', post_path(post.id), method: :delete %></td> 
         </tr>
     <% end %>
 </table>
 <br>
-<%= link_to '新規つぶやき作成画面へ戻る', new_post_path %>
+<%= link_to '新規ツイート作成画面へ戻る', new_post_path %>
