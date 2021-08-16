@@ -1,0 +1,7 @@
+<h3>以下の内容で、登録する</h3>
+<%= form_with(model: @post, local: true) do |form| %>
+    <%= form.hidden_field :content %>
+    <p>ツイート内容：<%= @post.content %></p>
+    <%= form.submit "登録する" %>
+    <%= link_to '戻る', :back %>
+<% end %>

@@ -17,3 +17,6 @@ module TweetApp
     # the framework and any gems in your application.
   end
 end
+
+#config.time_zone = 'Tokyo'
+#config.active_record.defalt_timezone = :local
