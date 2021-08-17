@@ -18,5 +18,5 @@ module TweetApp
   end
 end
 
-#config.time_zone = 'Tokyo'
-#config.active_record.defalt_timezone = :local
+config.time_zone = 'Tokyo'
+config.active_record.defalt_timezone = :local
