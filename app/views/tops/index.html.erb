@@ -1,24 +1,11 @@
 <div class="container">
-    <h1 class="title">Bootstrap</h1>
-        <nav class="menu">
-            <ul>
-                <li>top</li>
-                <li>menu1</li>
-                <li>menu2</li>
-            </ul>
-        </nav>
+    <h1 class="title">ツイートアプリ</h1>
+        
     <article>
         <div class="contents">
             <ul>
-                <li>contents1</li>
-                <li>contents2</li>
-            </ul>
-        </div>
-        <div class="topic">
-            <ul>
-                <li>bootstrapを使ってレスポンシブデザインを実現しよう</li>
-                <li>やればできる！bootstrapを使ってみよう</li>
-                <li>怖くない！レスポンシブデザインができるようになればWebアプリもワンランク上！</li>
+                <li><%= link_to "新規ツイート投稿", new_post_path %></li>
+                <li><%= link_to "ツイート一覧画面", posts_path %></li>
             </ul>
         </div>
     </article>
